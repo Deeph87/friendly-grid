@@ -15,47 +15,47 @@ html, body {
   padding: 0;
 }
 
-.conteneur {
+.container {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
   padding: 25px;
   *zoom: 1;
 }
-.conteneur:before, .conteneur:after {
+.container:before, .container:after {
   content: " ";
   display: table;
 }
-.conteneur:after {
+.container:after {
   clear: both;
 }
 
-.conteneur-full {
+.full-page-container {
   max-width: 100% !important;
   margin-left: auto;
   margin-right: auto;
   *zoom: 1;
 }
-.conteneur-full:before, .conteneur-full:after {
+.full-page-container:before, .full-page-container:after {
   content: " ";
   display: table;
 }
-.conteneur-full:after {
+.full-page-container:after {
   clear: both;
 }
 
-.ligne {
+.row {
   position: relative;
   min-height: 50px;
   width: 100%;
   float: left;
   *zoom: 1;
 }
-.ligne:before, .ligne:after {
+.row:before, .row:after {
   content: " ";
   display: table;
 }
-.ligne:after {
+.row:after {
   clear: both;
 }
 
