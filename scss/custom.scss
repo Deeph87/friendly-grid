@@ -1,0 +1,40 @@
+@import "compass/css3";
+@import "../partials/_variables.scss";
+@import "../partials/_mixins.scss";
+
+//===================
+// FONTS
+
+
+//===================
+// NORMALIZE
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+	overflow-x: hidden;
+	@include font-size(15px);
+	line-height: 1.4;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+//===================
+// NAVIGATION
+
+
+//===================
+// COMPONENTS
+
+
+//===================
+// RESPONSIVE
+
+@import "grid.scss";
+

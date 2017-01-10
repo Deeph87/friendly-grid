@@ -1,0 +1,62 @@
+@import "../partials/_mixins.scss";
+@import "../partials/_variables.scss";
+
+// Conteneur xD 
+.conteneur {
+	max-width: $container;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 25px;
+	*zoom: 1;
+	&:before, &:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+.conteneur-full {
+	max-width: 100% !important;
+	margin-left: auto;
+	margin-right: auto;
+	*zoom: 1;
+	&:before, &:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+// Lignes (ou Row)
+.ligne {
+	position: relative;
+	min-height: 50px;
+	width: 100%;
+	float: left;
+	*zoom: 1;
+	&:before, &:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+@media screen and (min-width: $large) {
+	@include gen-grid("l");
+}
+
+@media screen and (min-width: $medium) and (max-width: $large) {
+	@include gen-grid("m");
+}
+
+@media screen and (min-width: $small) and (max-width: $medium) {
+	@include gen-grid("s");
+}
+
+@media screen and (max-width: $small) {
+	@include gen-grid("xs");
+}
